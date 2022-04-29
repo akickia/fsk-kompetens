@@ -1,40 +1,44 @@
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
   font-family: 'Raleway', sans-serif;
-  margin: 0;
   text-align: center;
-  }
-  
-  .btn {
-    background-color: chocolate;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 15px 32px;
-    width: 200px;
-    text-align: center;
-    display: inline-block;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   }
 
   .container {
-    width: 80%;
-    margin: auto;
-    padding: 100px 0;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .service__bild img {
-    width: 50%;
-    align-items: center;
+  .section {
+    padding: 5% 0;
+    max-width: 85%;
+  }
+
+  img {
+    width: 100%;
   }
   
   h1 {
     color: white;
-    font-size: 65px;
+    font-size: 50px;
     margin: 40px;
   }
   
   h2 {
-    font-size: 50px;
+    font-size: 42px;
   }
   
   h3 {
@@ -47,16 +51,22 @@
     line-height: 1.5;
   }
   
+  .container__header {
+    justify-content: center;
+  }
 
   header {
     background-image: url("../images/bookbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
   }
   
-  
-  header a {
+  .btn {
+    background-color: rgb(0,0,0,0);
+    border: none;
+  }
+
+  .btn a {
     color: white;
     border: white solid;
     border-radius: 40px;
@@ -66,34 +76,55 @@
     padding: 25px;
     display: inline-block;
   }
+
+  .section__btn-second a {
+    color: #000;
+    border-color: #000;
+    border-width: 1px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+  }
   
 
   .service__cards {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: top;
+    align-items: center;
   }
 
   .service__card {
-    max-width: 30%;
+    margin: 2%;
     width: 100%;
     
   }
+
   
   .icon {
-    margin: 40px;
-  }
-  
-  .icon {
-    font-size: 150px;
+    font-size: 4em;
+    margin-top: 3%;
   }
   
   
-  .container__about {
+  .container__about, .container__testimonials{
     background-color: #dcdcdc;
   }
+ 
+.section__testimonials {
+  max-width: 80%;
+}
+
+.card:not(.active) {
+  display: none;
+}
   
   footer {
     background-color: #151515;
     color: white;
+    width: 100%;
+
+  }
+
+  .container__footer {
+    display: flex;
+    justify-content: center;
   }
