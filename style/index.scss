@@ -4,6 +4,8 @@
   }
 
   body {
+  max-width: 1500px;
+  width: 100%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   margin: auto;
@@ -16,7 +18,6 @@
   .container {
     max-width: 100%;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,14 +52,18 @@
     line-height: 1.5;
   }
   
-  .container__header {
-    justify-content: center;
-  }
-
   header {
     background-image: url("../images/bookbackground.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    max-width: 100%;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+  }
+  .container__header {
+    
   }
   
   .btn {
@@ -105,7 +110,7 @@
   }
   
   
-  .container__about, .container__testimonials{
+  .container__about, .container__testimonials, .container__about2{
     background-color: #dcdcdc;
   }
  
@@ -113,10 +118,19 @@
   max-width: 80%;
 }
 
+.card {
+  max-width: 400px;
+  margin: auto;
+}
+
 .card:not(.active) {
   display: none
 }
 
+.container__form {
+  min-height:fit-content;
+  padding-bottom: 5%;
+}
 .form__input-container {
   display: flex;
   flex-direction: column;
@@ -131,16 +145,15 @@
   font-size: medium;
 }
   footer {
-    background-color: #151515;
+    background-color: rgb(71, 71, 71);
     color: white;
     width: 100%;
 
   }
 
   .container__footer {
-    display: flex;
     justify-content: space-around;
-    height: 100vh;
+    height: 700px;
   }
 
   .small p {
@@ -153,6 +166,10 @@
     text-decoration: none;
   }
 
+  .small-text {
+    font-size: medium;
+  }
+
   .social-links {
     display: flex;
     max-width: 50%;
@@ -163,4 +180,23 @@
   .social-links a {
     color: white;
     font-size: 22px;
+  }
+
+  .social-links a:hover {
+    color: blue;
+  }
+
+  @media screen and (min-width:650px) {
+    .service__cards, .container__footer  {
+      flex-direction: row;
+    }
+    .social-links {
+      max-width: 20%;
+    }
+
+
+
+    .container__footer {
+      height: 250px
+    }
   }
