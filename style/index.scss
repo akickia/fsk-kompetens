@@ -38,7 +38,7 @@
   }
   
   h2 {
-    font-size: 42px;
+    font-size: 40px;
   }
   
   h3 {
@@ -114,9 +114,22 @@
 }
 
 .card:not(.active) {
-  display: none;
+  display: none
+}
+
+.form__input-container {
+  display: flex;
+  flex-direction: column;
 }
   
+.disclamer{ 
+  font-size: 10px;
+  color: red
+}
+
+.section__about2 p{
+  font-size: medium;
+}
   footer {
     background-color: #151515;
     color: white;
@@ -126,5 +139,28 @@
 
   .container__footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+
+  .small p {
+    font-size: 10px;
+    color: #dcdcdc;
+  }
+
+  .small p a {
+    color: #dcdcdc;
+    text-decoration: none;
+  }
+
+  .social-links {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .social-links a {
+    color: white;
+    font-size: 22px;
   }
