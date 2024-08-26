@@ -62,9 +62,7 @@
     display: flex;
     align-items: center;
   }
-  .container__header {
-    
-  }
+
   
   .btn {
     background-color: rgb(0,0,0,0);
@@ -89,7 +87,6 @@
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
   }
   
-
   .service__cards {
     display: flex;
     flex-direction: column;
@@ -99,16 +96,36 @@
 
   .service__card {
     margin: 2%;
+    height: 450px;
     width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
   }
 
-  
+  .content__carousel__card {
+    display: flex;
+    max-width: 80%;
+    overflow-x: auto;
+  }
+
+
+  .container__carousel button {
+    display: inline;
+  }
+  .service__card button {
+    margin-top: auto;
+  }
+
   .icon {
     font-size: 4em;
     margin-top: 3%;
   }
-  
+
+  .section__service img {
+    margin: 2rem 0
+  }
   
   .container__about, .container__testimonials, .container__about2{
     background-color: #dcdcdc;
@@ -116,6 +133,10 @@
  
 .section__testimonials {
   max-width: 80%;
+}
+
+video {
+  max-width: fit-content;
 }
 
 .card {

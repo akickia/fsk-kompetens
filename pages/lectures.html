@@ -9,8 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style/normalize.css" type="text/css">
-        <link rel="stylesheet" href="style/index.css" type="text/css">
+        <link rel="stylesheet" href="../style/normalize.css" type="text/css">
+        <link rel="stylesheet" href="../style/index.css" type="text/css">
         <script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
         <title>Förskolekompetens</title>
     </head>
@@ -18,41 +18,90 @@
     <body>
         <header>
             <div class="container container__header">
-                <h1> Kompetens och tillgänglighet för alla förskolor </h1>
+                <h1> Föreläsningar </h1>
                 <input type="text" id="search-input" placeholder="Sök inspiration">
             </div>
         </header>
 
+      <article class="container container__carousel">
+        <section class="content__carousel__card">
+          <div class="video_active">
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/cmY6lfZl9Pk">
+        </iframe>
+      </div>
+      <div>
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/YMJJuGac2C8">
+      </iframe>
+    </div>
+    <div>
+      <iframe width="420" height="315"
+      src="https://www.youtube.com/embed/NEwGfqGP-Qs">
+    </iframe>
+  </div>
+  <div>
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/vKoQv0UjLgA">
+  </iframe>
+</div>
+<div>
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/KwvUTgrS6vA">
+</iframe>
+</div>
+        </section>
+        <button class="btn">Prev</button><button class="btn">Next</button>
 
+
+      </article>
 
     <article class="container container__service">
       <article class="section section__service">
-        <h2>Vad söker du?</h2>
+        <h2>Föreläsningar efter kategori</h2>
  
-        <section class="service__cards">
-          <section class="service__card">
+        <section >
+          <section class="content__card">
             <i class="icon fa-solid fa-person-chalkboard"></i>
-            <h3>Föreläsningar</h3>
-            <p>Finn föreläsningar om introduktion, pedagogiskt material, systematiskt kvalitetsarbete och mycket annat </p>
-            <button class="section__btn-second btn"><a href="pages/lectures.html">Föreläsningar</a></button>
+            <h3>Introduktion</h3>
+            <iframe width="420" height="315"
+              src="https://www.youtube.com/embed/cmY6lfZl9Pk">
+            </iframe>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/YMJJuGac2C8">
+          </iframe>
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/NEwGfqGP-Qs">
+        </iframe>
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/vKoQv0UjLgA">
+      </iframe>
+      <iframe width="420" height="315"
+      src="https://www.youtube.com/embed/KwvUTgrS6vA">
+    </iframe>
+              
+
+
           </section>
 
           <section class="service__card">
             <i class="icon fa-solid fa-book-open"></i>
-            <h3>Litteratur</h3>
-            <p>Tips på litteratur inom valt ämne</p>
-            <button class="section__btn-second btn"><a>Litteratur</a></button>
+            <h3>Pedagogiska miljöer</h3>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/8ZU0g17BxO8">
+          </iframe>
           </section>
 
           <section class="service__card">
             <i class="icon fa-solid fa-people-line"></i>
-            <h3>Inspiration</h3>
-            <p>Här finns tips och tricks, artiklar och bilder för att inspirera dig</p>
-            <button class="section__btn-second btn"><a>Inspiration</a></button>
+            <h3>Systematiskt kvalitetsarbete</h3>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/oY-3THFPD9k">
+          </iframe>
           </section>
         </section>
 
-        <img src="images/larande.jpg"/>
+        <img src="../images/larande.jpg"/>
 
         <button class="section__btn-second btn"><a href="#contact">Kontakta oss</a></button>
         </article>
@@ -77,61 +126,14 @@
           Med rätt kunskaper och mentorsskap ökar möjligheterna för varje enskild medarbetare, varje arbetslag och varje arbetsplats att utföra sitt arbete på bästa sätt. Med ökad kompetens och möjlighet att diskutera frågor som är viktiga så ökar inte bara kunskaperna, utan även yrkesstoltheten, känslan av meningsfullhet och arbetsglädjen.</p>
       </div>
       <div>
-        <img class="kollegor" src="images/kollegor.jpg">
+        <img class="kollegor" src="../images/kollegor.jpg">
       </div>
       <div class="section section__service-2">
         <h3>Ge dina medarbetare bästa möjliga förutsättningar för en bättre arbetsmiljö</h3>
         <button class="section__btn-second btn"><a href="#contact">Kontakta oss</a></button>
       </div>
     </div>
-    <div class="container container__testimonials">
-      <div class="section section__testimonials">
-        <div class="testimonial__cards">
-          <h2>Vad säger tidigare kunder om oss?</h2>
-          <div class="progress" id="progress">
-          </div>
-          <div class="card active">
-            <div class="card__img">
-              <img src="images/test1.jpg">
-            </div>
-            <div class="card__info">
-              <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore distinctio ipsam iure, quis a placeat debitis, maxime corrupti animi aspernatur pariatur ex numquam molestiae quas laboriosam sed ut quidem"!</h4>
-              <p class="sign">Marlene Andersson</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/test2.jpg">
-            </div>
-            <div class="card__info">
-              <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore distinctio ipsam iure, quis a placeat debitis, maxime corrupti animi aspernatur pariatur ex numquam molestiae quas laboriosam sed ut quidem"!</h4>
-              <p class="sign">Manish Kumar</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/test3.jpg">
-            </div>
-            <div class="card__info">
-              <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore distinctio ipsam iure, quis a placeat debitis, maxime corrupti animi aspernatur pariatur ex numquam molestiae quas laboriosam sed ut quidem"!</h4>
-              <p class="sign">Felicity Nordstand</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/test4.jpg">
-            </div>
-            <div class="card__info">
-              <h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore distinctio ipsam iure, quis a placeat debitis, maxime corrupti animi aspernatur pariatur ex numquam molestiae quas laboriosam sed ut quidem"!</h4>
-              <p class="sign">Fatima Ali</p>
-            </div>
-          </div>
-          <button class="btn" id="prev" disabled>Prev</button>
-          <button class="btn" id="next">Next</button>
-        </div>
-      </div>
-    </div>
-
+   
     <div class="container container__form" id="contact">
       <h2>Kontakta oss</h2>
       <p>Fyll i formuläret</p>

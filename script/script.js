@@ -1,3 +1,14 @@
+const searchEl = document.getElementById('search-input')
+const newText = document.createElement('h3')
+const headerContainer = document.querySelector('.container__header')
+
+
+searchEl.addEventListener('keypress', () => {
+        newText.innerText = searchEl.value
+        headerContainer.appendChild(newText)
+})
+
+
 
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
